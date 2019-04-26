@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 
-public class LowerSectionFragments extends Fragment {
+public class LowerSectionFragment extends Fragment {
 
     private static EditText upperMemeText;  // = findByViewId(R.id.upper_text)
     private static EditText lowerMemeText;

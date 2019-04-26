@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity implements UpperSectionFragments.UpperSectionListener {
+public class MainActivity extends AppCompatActivity implements UpperSectionFragment.UpperSectionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity implements UpperSectionFragm
 
     @Override
     public void createMeme(String upper, String lower) {
-        LowerSectionFragments lowerFragment =
-                (LowerSectionFragments) getSupportFragmentManager().findFragmentById(R.id.lower_fragment);
+        LowerSectionFragment lowerFragment =
+                (LowerSectionFragment) getSupportFragmentManager().findFragmentById(R.id.lower_fragment);
         // getSupportFragmentManager - a Fragment Manager for doing infrastructure stuff with fragments
         // https://developer.android.com/reference/android/support/v4/app/FragmentActivity
         // getFragmentManager may have superceded this

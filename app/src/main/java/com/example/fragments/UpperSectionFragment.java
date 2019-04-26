@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class UpperSectionFragments extends Fragment {       // extends Fragment (to use fragment layout)
+public class UpperSectionFragment extends Fragment {       // extends Fragment (to use fragment layout)
 
     private static EditText upperTextInput;
     private static EditText lowerTextInput;
@@ -34,7 +34,7 @@ public class UpperSectionFragments extends Fragment {       // extends Fragment 
     @Override
     public void onAttach(Context context) {
         // called when fragment first attached to activity - Context is a superclass of Activity (see doc link below)
-        // NB main activity implements'ing UpperSectionFragments.UpperSectionListener - cf 29
+        // NB main activity implements'ing UpperSectionFragment.UpperSectionListener - cf 29
         super.onAttach(context);
 //        try
 //        {

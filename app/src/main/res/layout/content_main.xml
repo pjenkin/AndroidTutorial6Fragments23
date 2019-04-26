@@ -10,7 +10,7 @@
 
     <fragment
         android:id="@+id/upper_fragment"
-        android:name="com.example.fragments.UpperSectionFragments"
+        android:name="com.example.fragments.UpperSectionFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
@@ -20,7 +20,7 @@
 
     <fragment
         android:id="@+id/lower_fragment"
-        android:name="com.example.fragments.LowerSectionFragments"
+        android:name="com.example.fragments.LowerSectionFragment"
         android:layout_width="325dp"
         android:layout_height="243dp"
         app:layout_constraintBottom_toBottomOf="parent"
