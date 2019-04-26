@@ -34,7 +34,7 @@ public class UpperSectionFragments extends Fragment {       // extends Fragment 
     @Override
     public void onAttach(Context context) {
         // called when fragment first attached to activity - Context is a superclass of Activity (see doc link below)
-        // NB main activity implements'ing UpperSectionFragments.UpperSectionListener
+        // NB main activity implements'ing UpperSectionFragments.UpperSectionListener - cf 29
         super.onAttach(context);
 //        try
 //        {

@@ -30,7 +30,12 @@ public class MainActivity extends AppCompatActivity implements UpperSectionFragm
 
     @Override
     public void createMeme(String upper, String lower) {
-
+        LowerSectionFragments lowerFragment =
+                (LowerSectionFragments) getSupportFragmentManager().findFragmentById(R.id.lower_fragment);
+        // getSupportFragmentManager - a Fragment Manager for doing infrastructure stuff with fragments
+        // https://developer.android.com/reference/android/support/v4/app/FragmentActivity
+        // getFragmentManager may have superceded this
+        lowerFragment.setMemeText(upper, lower);
     }
 
     @Override
