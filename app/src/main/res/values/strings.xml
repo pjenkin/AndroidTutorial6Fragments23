@@ -2,4 +2,6 @@
     <string name="app_name">Fragments</string>
     <string name="action_settings">Settings</string>
     <string name="memes_thing">Memes thing</string>
+    <string name="upper_text">Upper text</string>
+    <string name="lower_text">Lower text</string>
 </resources>
