@@ -24,6 +24,8 @@ public class UpperSectionFragments extends Fragment {       // extends Fragment 
         public void createMeme(String upper, String lower);
         // 'promise' to create a method to accept text and transfer data to activity & other fragment
         // nested interface - association
+        // implementation of createMeme found in main activity
+        // ... which is now set to be implementing UpperSectionListener
     }
 
     // Alt+Insert to code-generate/start override implentation
@@ -32,6 +34,7 @@ public class UpperSectionFragments extends Fragment {       // extends Fragment 
     @Override
     public void onAttach(Context context) {
         // called when fragment first attached to activity - Context is a superclass of Activity (see doc link below)
+        // NB main activity implements'ing UpperSectionFragments.UpperSectionListener
         super.onAttach(context);
 //        try
 //        {

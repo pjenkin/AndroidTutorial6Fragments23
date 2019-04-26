@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements UpperSectionFragments.UpperSectionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    @Override
+    public void createMeme(String upper, String lower) {
+
     }
 
     @Override
